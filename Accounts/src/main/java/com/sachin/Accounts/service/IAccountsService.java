@@ -3,5 +3,11 @@ import com.sachin.Accounts.dto.CustomerDto;
 
 public interface IAccountsService
 {
-    public void createAccount(CustomerDto cd);
+    void createAccount(CustomerDto cd);
+
+    CustomerDto fetchAccount(String mobileNumber);
+
+    boolean updateAccount(CustomerDto customerDto);
+
+    boolean deleteAccount(String mobileNumber);
 }
