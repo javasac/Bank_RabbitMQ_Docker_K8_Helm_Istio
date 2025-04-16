@@ -11,6 +11,7 @@
 	<groupId>com.sachin</groupId>
 	<artifactId>Accounts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>Accounts</name>
 	<description>Spring Boot Microservices Accounts</description>
 	<url/>
@@ -100,6 +101,18 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.5</version>
+				<configuration>
+					<to>
+						<image>Accounts</image>
+					</to>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 
