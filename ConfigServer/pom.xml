@@ -12,7 +12,7 @@
 	<artifactId>ConfigServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ConfigServer</name>
-	<description>ConfigServer for Bank MicroServices </description>
+	<description>ConfigServer for Bank MicroServices</description>
 	<url/>
 	<licenses>
 		<license/>
