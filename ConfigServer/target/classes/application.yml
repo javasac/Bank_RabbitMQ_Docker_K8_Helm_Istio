@@ -1,0 +1,23 @@
+server:
+    port: 8071
+
+encrypt:
+  key: "4353GR54DSD434343434HGH5"
+
+spring:
+  application:
+    name: "ConfigServer"
+  profiles:
+    active: native
+    #active: git
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: "classpath:/config"
+          # C:\Java_Code\Bank_RabbitMQ_Docker_K8_Helm_Istio\ConfigServer\src\main\resources\config
+        #git:
+         # uri: https://github.com/javasac/Bank_RabbitMQ_Docker_K8_Helm_Istio
+          #clone-on-start: true
+        #bootstrap: true
+      #enabled: true
