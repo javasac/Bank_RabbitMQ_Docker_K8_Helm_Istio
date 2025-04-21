@@ -1,12 +1,15 @@
 server:
     port: 8071
 
+encrypt:
+  key: "4353GR54DSD434343434HGH5"
+
 spring:
   application:
     name: "ConfigServer"
   profiles:
     active: native
-
+    #active: git
   cloud:
     config:
       server:

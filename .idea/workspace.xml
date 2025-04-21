@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="Accounts:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18fa7048-bfc7-4aac-8479-4abf3c42b67c" name="Changes" comment="Added Loans and Cards in the Bank application.">
+    <list default="true" id="5405c49c-83a1-4cf1-8357-26100ae40871" name="Changes" comment="Added Config files in Github.">
+      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/accounts-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/accounts-qa.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/accounts.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/cards-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/cards-qa.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/cards.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/loans-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/loans-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/loans-qa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/loans-qa.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/loans.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/loans.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Github_Config/accounts-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Github_Config/accounts-qa.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Github_Config/accounts.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Github_Config/cards-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Github_Config/cards-qa.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Github_Config/cards.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Github_Config/loans-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Github_Config/loans-qa.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Github_Config/loans.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/repository/LoansRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/repository/LoansRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/service/impl/LoansServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/service/impl/LoansServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,95 +50,48 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2vYghJXcRzLclZUJuP2ZkvuYPs0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2w0r1sm7aODQZVrXXymwAU35noo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AccountsApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Java_Code/Bank_RabbitMQ_Docker_K8_Helm_Istio/Accounts",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.20147194",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "settings.editor.splitter.proportion": "0.24096386"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Java_Code/Bank_RabbitMQ_Docker_K8_Helm_Istio/Github_Config&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Bank_RabbitMQ_Docker_K8_Helm_Istio" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Bank_RabbitMQ_Docker_K8_Helm_Istio" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java_Code\Bank_RabbitMQ_Docker_K8_Helm_Istio\Github_Config" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="18fa7048-bfc7-4aac-8479-4abf3c42b67c" name="Changes" comment="" />
-      <created>1744327540708</created>
+      <changelist id="5405c49c-83a1-4cf1-8357-26100ae40871" name="Changes" comment="" />
+      <created>1745189120584</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1744327540708</updated>
+      <updated>1745189120584</updated>
     </task>
-    <task id="LOCAL-00001" summary="Completed the Account Microservice with CRUD and Swagger doc.">
+    <task id="LOCAL-00001" summary="Added Config files in Github.">
       <option name="closed" value="true" />
-      <created>1744572696135</created>
+      <created>1745189615225</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1744572696135</updated>
+      <updated>1745189615225</updated>
     </task>
-    <task id="LOCAL-00002" summary="Completed the Account Microservice with CRUD and Swagger doc.">
-      <option name="closed" value="true" />
-      <created>1744572723831</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1744572723831</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Completed the Account Microservice with CRUD and Swagger doc.">
-      <option name="closed" value="true" />
-      <created>1744767900644</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1744767900646</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added Loans and Cards in the Bank application.">
-      <option name="closed" value="true" />
-      <created>1744918382728</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1744918382729</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="Dockerfile" />
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Completed the Account Microservice with CRUD and Swagger doc." />
-    <MESSAGE value="Added Loans and Cards in the Bank application." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Loans and Cards in the Bank application." />
+    <MESSAGE value="Added Config files in Github." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Config files in Github." />
   </component>
 </project>

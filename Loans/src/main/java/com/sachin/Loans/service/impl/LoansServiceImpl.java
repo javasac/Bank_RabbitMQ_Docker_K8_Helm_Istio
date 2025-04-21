@@ -17,7 +17,7 @@ import java.util.Random;
 @AllArgsConstructor
 public class LoansServiceImpl implements ILoansService
 {
-
+    @Autowired
     private LoansRepository loansRepository;
 
     /**
@@ -88,6 +88,4 @@ public class LoansServiceImpl implements ILoansService
         loansRepository.deleteById(loans.getLoanId());
         return true;
     }
-
-
 }
