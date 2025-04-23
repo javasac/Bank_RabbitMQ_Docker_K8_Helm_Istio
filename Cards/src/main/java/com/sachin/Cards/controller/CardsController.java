@@ -1,5 +1,6 @@
 package com.sachin.Cards.controller;
 import com.sachin.Cards.constants.CardsConstants;
+import com.sachin.Cards.dto.CardsContactInfoDto;
 import com.sachin.Cards.dto.CardsDto;
 import com.sachin.Cards.dto.ErrorResponseDto;
 import com.sachin.Cards.dto.ResponseDto;
@@ -26,9 +27,20 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api")
 @Validated
 
-public class CardsController {
-
+public class CardsController
+{
+    @Autowired
     private ICardsService iCardsService;
+
+    @Autowired
+    private CardsContactInfoDto cardsContactInfoDto;
+
+    @GetMapping("/contact")
+    public ResponseEntity<CardsContactInfoDto> getContactInfo()
+    {
+        return ResponseEntity.
+                status(HttpStatus.OK).body(cardsContactInfoDto);
+    }
 
     @Operation(
             summary = "Create Card REST API",
@@ -78,7 +90,8 @@ public class CardsController {
     @GetMapping("/fetch")
     public ResponseEntity<CardsDto> fetchCardDetails(@RequestParam
                                                      @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
-                                                     String mobileNumber) {
+                                                     String mobileNumber)
+    {
         CardsDto cardsDto = iCardsService.fetchCard(mobileNumber);
         return ResponseEntity.status(HttpStatus.OK).body(cardsDto);
     }
@@ -105,8 +118,10 @@ public class CardsController {
             )
     })
     @PutMapping("/update")
-    public ResponseEntity<ResponseDto> updateCardDetails(@Valid @RequestBody CardsDto cardsDto) {
+    public ResponseEntity<ResponseDto> updateCardDetails(@Valid @RequestBody CardsDto cardsDto)
+    {
         boolean isUpdated = iCardsService.updateCard(cardsDto);
+
         if(isUpdated) {
             return ResponseEntity
                     .status(HttpStatus.OK)

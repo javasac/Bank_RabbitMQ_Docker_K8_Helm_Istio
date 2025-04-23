@@ -1,0 +1,41 @@
+server:
+  port: 8200
+
+spring:
+  application:
+    name: Accounts
+
+  config:
+    activate:
+      on-profile: "default"
+    import:
+      - "application-qa.yml"
+      - "application-prod.yml"
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/bank
+    Driver: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+build:
+  version: "2.5"
+
+accounts:
+  message: "Welcome to Bank accounts related to locals APIs."
+
+  contactDetails:
+    name: "John Doe - Developer"
+    email: "John_Doe@gmail.com"
+
+  onCallSupport:
+    -(555)555-1234
+    -(555)534-0915

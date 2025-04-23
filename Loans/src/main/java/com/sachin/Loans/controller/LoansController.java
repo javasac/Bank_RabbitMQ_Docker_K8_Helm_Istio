@@ -1,6 +1,7 @@
 package com.sachin.Loans.controller;
 import com.sachin.Loans.constants.LoansConstants;
 import com.sachin.Loans.dto.ErrorResponseDto;
+import com.sachin.Loans.dto.LoansContactInfoDto;
 import com.sachin.Loans.dto.LoansDto;
 import com.sachin.Loans.dto.ResponseDto;
 import com.sachin.Loans.service.ILoansService;
@@ -20,6 +21,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
 @Tag(
         name = "CRUD REST APIs for Loans in EazyBank",
         description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE loan details"
@@ -39,7 +41,17 @@ public class LoansController
     @Autowired
     private Environment env;
 
+    @Autowired
+    private LoansContactInfoDto loansContactInfoDto;
+
     public LoansController() { }
+
+    @GetMapping("/contact")
+    public ResponseEntity<LoansContactInfoDto> getContactInfo()
+    {
+        return ResponseEntity.
+                status(HttpStatus.OK).body(loansContactInfoDto);
+    }
 
     @GetMapping("/java")
     public String getJavaVersion()
@@ -168,17 +180,21 @@ public class LoansController
     @DeleteMapping("/delete")
     public ResponseEntity<ResponseDto> deleteLoanDetails(@RequestParam
                                                          @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
-                                                         String mobileNumber) {
+                                                         String mobileNumber)
+    {
         boolean isDeleted = iLoansService.deleteLoan(mobileNumber);
-        if(isDeleted) {
+
+        if(isDeleted)
+        {
             return ResponseEntity
                     .status(HttpStatus.OK)
                     .body(new ResponseDto(LoansConstants.STATUS_200, LoansConstants.MESSAGE_200));
-        }else{
+        }
+        else
+        {
             return ResponseEntity
                     .status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(LoansConstants.STATUS_417, LoansConstants.MESSAGE_417_DELETE));
         }
     }
-
 }

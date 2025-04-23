@@ -1,5 +1,6 @@
 package com.sachin.Accounts.controller;
 import com.sachin.Accounts.constants.AccountsConstants;
+import com.sachin.Accounts.dto.AccountsContactInfoDto;
 import com.sachin.Accounts.dto.CustomerDto;
 import com.sachin.Accounts.dto.ResponseDto;
 import com.sachin.Accounts.service.IAccountsService;
@@ -26,6 +27,16 @@ public class AccountsController
 {
     @Autowired
     private IAccountsService iAccountsService;
+
+    @Autowired
+    private AccountsContactInfoDto accountsContactInfoDto;
+
+    @GetMapping("/contact")
+    public ResponseEntity<AccountsContactInfoDto> getContactInfo()
+    {
+        return ResponseEntity.
+                status(HttpStatus.OK).body(accountsContactInfoDto);
+    }
 
     @Operation(
             summary = "Delete Account REST API.",
