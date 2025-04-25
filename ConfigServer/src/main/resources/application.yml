@@ -3,13 +3,36 @@ spring:
     name: ConfigServer
 
   profiles:
-    active: native
+    active: git
 
   cloud:
     config:
       server:
-        native:
-          search-locations: "classpath:/config"
+        git:
+          uri: "https://github.com/javasac/ConfigPropsBank.git"
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+          #native:
+          #search-locations: "classpath:/config"
+          #https://github.com/javasac/ConfigPropsBank.git
 
 server:
   port: 8071
+
+encrypt:
+  key: "75BpbQAvAkqRWn7hkeeOD+H2bf6sT2LImmQOzLr"
+
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+
+    management:
+      endpoints:
+        web:
+          exposure:
+            include: "*"
+
