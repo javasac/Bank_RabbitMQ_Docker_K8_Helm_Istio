@@ -4,29 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5405c49c-83a1-4cf1-8357-26100ae40871" name="Changes" comment="Add Config Server.">
-      <change afterPath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Loans/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="5405c49c-83a1-4cf1-8357-26100ae40871" name="Changes" comment="Spring Cloud Bus, Actuator and Monitor.">
+      <change afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/dto/CardsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/dto/CustomerDetailsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/dto/LoansDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/ICustomersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/CardsFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/LoansFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/impl/CustomersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_04_2025_11_23_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_04_2025_11_23__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/dto/AccountsContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/dto/AccountsContactInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/src/main/resources/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/src/main/resources/application-qa.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/controller/AccountsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/mapper/CustomerMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/src/main/java/com/sachin/Cards/dto/CardsContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/java/com/sachin/Cards/dto/CardsContactInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/src/main/resources/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/src/main/resources/application-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cards/src/main/java/com/sachin/Cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/java/com/sachin/Cards/controller/CardsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/dto/LoansContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/dto/LoansContactInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loans/src/main/resources/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loans/src/main/resources/application-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loans/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/controller/LoansController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +48,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ConfigServer" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -69,12 +75,13 @@
     &quot;Application.AccountsApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.CardsApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.LoansApplication.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Java_Code/Bank_RabbitMQ_Docker_K8_Helm_Istio/Cards/src/main/resources&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Java_Code/Bank_RabbitMQ_Docker_K8_Helm_Istio/GatewayServer&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -83,6 +90,13 @@
       <recent name="C:\Java_Code\Bank_RabbitMQ_Docker_K8_Helm_Istio\Loans\src\main\resources" />
       <recent name="C:\Java_Code\Bank_RabbitMQ_Docker_K8_Helm_Istio\Accounts\src\main\resources" />
       <recent name="C:\Java_Code\Bank_RabbitMQ_Docker_K8_Helm_Istio\Github_Config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sachin.Accounts.service.impl" />
+      <recent name="com.sachin.Accounts.service" />
+      <recent name="com.sachin.Accounts.controller" />
+      <recent name="com.sachin.Accounts.service.client" />
+      <recent name="com.sachin.Accounts.dto" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -126,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745432211050</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Spring Cloud Bus, Actuator and Monitor.">
+      <option name="closed" value="true" />
+      <created>1745610360643</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745610360644</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +165,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Config files in Github." />
     <MESSAGE value="Add Config Server." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Config Server." />
+    <MESSAGE value="Spring Cloud Bus, Actuator and Monitor." />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud Bus, Actuator and Monitor." />
   </component>
 </project>

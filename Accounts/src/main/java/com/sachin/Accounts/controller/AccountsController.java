@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
         description = "CRUD REST APIs - CREATE, UPDATE AND DELETE for Accounts in Bank."
 )
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/accounts")
 @Validated
 public class AccountsController
 {

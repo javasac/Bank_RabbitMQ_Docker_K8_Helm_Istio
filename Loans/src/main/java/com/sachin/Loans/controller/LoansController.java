@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.*;
         description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE loan details"
 )
 @RestController
-@RequestMapping(path = "/api")
+@RequestMapping(path = "/loans")
 @AllArgsConstructor
 @Validated
 public class LoansController
@@ -184,7 +184,7 @@ public class LoansController
     {
         boolean isDeleted = iLoansService.deleteLoan(mobileNumber);
 
-        if(isDeleted)
+        if (isDeleted)
         {
             return ResponseEntity
                     .status(HttpStatus.OK)

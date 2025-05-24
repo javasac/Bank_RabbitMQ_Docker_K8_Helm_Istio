@@ -1,9 +1,6 @@
 server:
   port: 8201
 
-build:
-  version: 2.9
-
 spring:
   application:
     name: cards
@@ -27,14 +24,41 @@ spring:
   config:
     import: "optional:configserver:http://localhost:8071/"
 
-  rabbitmq:
-    host: "localhost"
-    port: 5672
-    username: "guest"
-    password: "guest"
+  #rabbitmq:
+  #  host: "localhost"
+  #  port: 5672
+  #  username: "guest"
+  #  password: "guest"
 
-    #management:
-    # endpoints:
-    # web:
-  #  exposure:
-  #    include: "*"
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
+    endpoint:
+      shutdown:
+        access: unrestricted
+    info:
+      env:
+        enabled: true
+
+    health:
+      readiness-state:
+        enabled: true
+      liveness-state:
+        enabled: true
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+info:
+  app:
+    name: "Cards"
+    description: "Eazy Bank Cards Application"
+    version: "1.0"
