@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to SK-PRODUCTION Bank Accounts related to locals APIs."
+  contactDetails:
+    name: "Account Prod - Principal Software Engineer"
+    email: "{cipher}c982ed08d1a77ea7a5bbae06f145ee0c046ce7cfd7799e817c2f22b35e4c362e9b33b2a94dc62bfe7f95832c5f6177c5"
+  onCallSupport:
+    -(555)555-1234
+    -(555)534-0915
