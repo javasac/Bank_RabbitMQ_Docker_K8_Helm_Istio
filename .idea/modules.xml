@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Bank_RabbitMQ_Docker_K8_Helm_Istio.iml" filepath="$PROJECT_DIR$/.idea/Bank_RabbitMQ_Docker_K8_Helm_Istio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MicroServices_RabbitMQ_Docker_K8_Helm_Istio.iml" filepath="$PROJECT_DIR$/.idea/MicroServices_RabbitMQ_Docker_K8_Helm_Istio.iml" />
     </modules>
   </component>
 </project>

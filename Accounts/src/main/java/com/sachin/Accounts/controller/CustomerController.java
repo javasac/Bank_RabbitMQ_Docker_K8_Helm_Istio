@@ -29,6 +29,7 @@ public class CustomerController
     public ResponseEntity<CustomerDetailsDto> fetchCustomerDetails(@RequestParam @Pattern(regexp = "(^$|[0-9]{10})",
             message = "Mobile # must be 10 digits.") String mobileNumber)
     {
+        System.out.println("Method is fetchCustomerDetails and Mobile is " + mobileNumber);
         CustomerDetailsDto customerDetailsDto = iCustomersService.fetchCustomerDetails(mobileNumber);
         return ResponseEntity.status(HttpStatus.OK).body(customerDetailsDto);
     }

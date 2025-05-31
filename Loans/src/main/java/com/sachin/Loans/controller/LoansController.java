@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.*;
         description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE loan details"
 )
 @RestController
-@RequestMapping(path = "/loans")
+@RequestMapping("/loans")
 @AllArgsConstructor
 @Validated
 public class LoansController
@@ -111,10 +111,12 @@ public class LoansController
             )
     }
     )
-    @GetMapping("/fetch")
+    @GetMapping("/detail")
     public ResponseEntity<LoansDto> fetchLoanDetails(@RequestParam
                                                      @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
-                                                     String mobileNumber) {
+                                                     String mobileNumber)
+    {
+        System.out.println("=======LoansController class and method is fetchLoanDetails==========" + mobileNumber);
         LoansDto loansDto = iLoansService.fetchLoan(mobileNumber);
         return ResponseEntity.status(HttpStatus.OK).body(loansDto);
     }

@@ -14,7 +14,6 @@ import com.sachin.Accounts.service.ICustomersService;
 import com.sachin.Accounts.service.client.CardsFeignClient;
 import com.sachin.Accounts.service.client.LoansFeignClient;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +29,7 @@ public class CustomersServiceImpl implements ICustomersService
     @Override
     public CustomerDetailsDto fetchCustomerDetails(String mobileNumber)
     {
+        System.out.println("==========CustomersServiceImpl=====fetchCustomerDetails========" + mobileNumber);
         Customer customer = customerRepository.findByMobileNumber(mobileNumber).
                 orElseThrow(() -> new ResourceNotFoundException("Customer", "mobileNumber", mobileNumber));
 

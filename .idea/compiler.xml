@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="EurekaServer" />
+        <module name="SpringCloudConfig" />
       </profile>
       <profile name="Annotation profile for Loans" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -17,21 +18,18 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
         </processorPath>
         <module name="Loans" />
-        <module name="Cards" />
         <module name="Accounts" />
+        <module name="Cards" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="17">
-      <module name="ConfigServer" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Accounts" options="-parameters" />
       <module name="Cards" options="-parameters" />
-      <module name="ConfigServer" options="-parameters" />
       <module name="EurekaServer" options="-parameters" />
       <module name="Loans" options="-parameters" />
+      <module name="SpringCloudConfig" options="-parameters" />
     </option>
   </component>
 </project>

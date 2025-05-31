@@ -1,6 +1,13 @@
 server:
   port: 8761
 
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: false
+
 spring:
   application:
     name: "EurekaServer"
@@ -16,8 +23,6 @@ spring:
       health:
         probes:
           enabled: true
-
-
     health:
       readiness-state:
         enabled: true

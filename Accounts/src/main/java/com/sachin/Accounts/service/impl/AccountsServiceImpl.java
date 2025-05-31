@@ -13,7 +13,6 @@ import com.sachin.Accounts.service.IAccountsService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.Random;
 import com.sachin.Accounts.mapper.AccountsMapper;
@@ -26,7 +25,6 @@ public class AccountsServiceImpl implements IAccountsService
     private AccountsRepository accountsRepository;
     @Autowired
     private CustomerRepository customerRepository;
-
 
     @Override
     public void createAccount(CustomerDto cd)
