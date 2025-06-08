@@ -13,6 +13,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,6 +30,8 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 public class CardsController
 {
+    private static final Logger logger = LoggerFactory.getLogger(CardsController.class);
+
     @Autowired
     private ICardsService iCardsService;
 
@@ -87,8 +91,10 @@ public class CardsController
             )
     })
     @GetMapping("/detail/{mobileNumber}")
-    public ResponseEntity<CardsDto> fetchCardDetails(@PathVariable String mobileNumber)
+    public ResponseEntity<CardsDto> fetchCardDetails(@RequestHeader("Bank-Correlation-ID") String correlationID,
+                                                     @PathVariable String mobileNumber)
     {
+        logger.debug("BANK-CORRELATION-ID generated in CardsController = ", correlationID);
         System.out.println("=======CardsController fetchCardDetails==========" + mobileNumber);
         CardsDto cardsDto = iCardsService.fetchCard(mobileNumber);
         return ResponseEntity.status(HttpStatus.OK).body(cardsDto);

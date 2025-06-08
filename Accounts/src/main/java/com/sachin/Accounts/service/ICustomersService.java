@@ -3,5 +3,5 @@ import com.sachin.Accounts.dto.CustomerDetailsDto;
 
 public interface ICustomersService
 {
-    CustomerDetailsDto fetchCustomerDetails(String mobileNumber);
+    CustomerDetailsDto fetchCustomerDetails(String mobileNumber, String correlationID);
 }

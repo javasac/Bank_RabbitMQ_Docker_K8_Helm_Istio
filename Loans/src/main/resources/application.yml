@@ -65,3 +65,9 @@ info:
     name: "Loans"
     description: "Eazy Bank Loans Application"
     version: "1.0"
+
+logging:
+  level:
+    com:
+      Sachin:
+        Loans: DEBUG

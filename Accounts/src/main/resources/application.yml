@@ -1,6 +1,12 @@
 server:
   port: 8200
 
+logging:
+  level:
+    com:
+      Sachin:
+        Accounts: DEBUG
+
 spring:
   application:
     name: accounts

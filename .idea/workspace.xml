@@ -5,30 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="656f64e9-833c-4715-96a9-cf629e8c8903" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MicroServices_RabbitMQ_Docker_K8_Helm_Istio.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Bank_RabbitMQ_Docker_K8_Helm_Istio.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/SpringCloudApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/filters/FilterUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/filters/RequestTraceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/filters/ResponseTraceFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/ICustomersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/ICustomersService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/CardsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/CardsFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/LoansFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/LoansFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/impl/AccountsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/impl/AccountsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/impl/CustomersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/impl/CustomersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cards/src/main/java/com/sachin/Cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/java/com/sachin/Cards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EurekaServer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/controller/LoansController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/example/SpringCloudAPIGateway/SpringCloudApiGatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/src/test/java/com/example/SpringCloudAPIGateway/SpringCloudApiGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/test/java/com/sachin/SpringCloudAPIGateway/SpringCloudApiGatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/target/classes/com/example/SpringCloudAPIGateway/SpringCloudApiGatewayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/target/test-classes/com/example/SpringCloudAPIGateway/SpringCloudApiGatewayApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/accounts-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/accounts-qa.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/accounts.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/cards-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/cards-qa.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/cards.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/loans-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/loans-qa.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/loans.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/test-classes/com/sachin/SpringCloudConfig/SpringCloudConfigApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudConfig/target/test-classes/com/sachin/SpringCloudConfig/SpringCloudConfigApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,19 +76,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SpringCloudConfigApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AccountsApplication.executor": "Debug",
+    "Application.CardsApplication.executor": "Debug",
+    "Application.EurekaServerApplication.executor": "Debug",
+    "Application.LoansApplication.executor": "Debug",
+    "Application.SpringCloudApiGatewayApplication.executor": "Debug",
+    "Application.SpringCloudConfigApplication.executor": "Debug",
+    "Attach to process.pid 19008.executor": "ProcessAttachDebug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Bank_RabbitMQ_Docker_K8_Helm_Istio" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
