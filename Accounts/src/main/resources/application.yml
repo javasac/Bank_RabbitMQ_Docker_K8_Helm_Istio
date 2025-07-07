@@ -13,6 +13,11 @@ spring:
   profiles:
     active: prod
 
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
+
   datasource:
     url: jdbc:mysql://localhost:3306/bank
     Driver: com.mysql.cj.jdbc.Driver
@@ -72,3 +77,25 @@ info:
     name: "Accounts"
     description: "Eazy Bank Accounts Application"
     version: "1.0"
+
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10000
+
+resilience4j.retry:
+  configs:
+    default:
+      maxRetryAttempts: 5
+      waitDuration: 500
+      enableExponentialBackoff: true
+      exponentialBackoffMultiplier: 2
+      ignoreExceptions:
+        - java.lang.NullPointerException
+      retryExceptions:
+        - java.util.concurrent.TimeoutException
+
+

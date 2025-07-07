@@ -4,41 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="656f64e9-833c-4715-96a9-cf629e8c8903" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/SpringCloudApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/filters/FilterUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/filters/RequestTraceFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/filters/ResponseTraceFilter.java" afterDir="false" />
+    <list default="true" id="656f64e9-833c-4715-96a9-cf629e8c8903" name="Changes" comment="Added Request Trace functionality.">
+      <change afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/CardsFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/LoansFallBack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/ICustomersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/ICustomersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/controller/AccountsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/CardsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/CardsFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/LoansFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/client/LoansFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/impl/CustomersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/java/com/sachin/Accounts/service/impl/CustomersServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/src/main/java/com/sachin/Cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/java/com/sachin/Cards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Cards/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/src/main/java/com/sachin/Loans/controller/LoansController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Loans/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/example/SpringCloudAPIGateway/SpringCloudApiGatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_MicroServices.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Project_MicroServices.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/SpringCloudApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/SpringCloudApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/filters/ResponseTraceFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/java/com/sachin/SpringCloudAPIGateway/filters/ResponseTraceFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/src/test/java/com/example/SpringCloudAPIGateway/SpringCloudApiGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/src/test/java/com/sachin/SpringCloudAPIGateway/SpringCloudApiGatewayApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/target/classes/com/example/SpringCloudAPIGateway/SpringCloudApiGatewayApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/target/test-classes/com/example/SpringCloudAPIGateway/SpringCloudApiGatewayApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/accounts-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/accounts-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/accounts.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/cards-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/cards-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/cards.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/loans-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/loans-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/classes/config/loans.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloudConfig/target/test-classes/com/sachin/SpringCloudConfig/SpringCloudConfigApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudConfig/target/test-classes/com/sachin/SpringCloudConfig/SpringCloudConfigApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/target/classes/com/sachin/SpringCloudAPIGateway/SpringCloudApiGatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/target/classes/com/sachin/SpringCloudAPIGateway/SpringCloudApiGatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudAPIGateway/target/classes/com/sachin/SpringCloudAPIGateway/filters/ResponseTraceFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudAPIGateway/target/classes/com/sachin/SpringCloudAPIGateway/filters/ResponseTraceFilter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +64,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AccountsApplication.executor": "Debug",
-    "Application.CardsApplication.executor": "Debug",
+    "Application.CardsApplication.executor": "Run",
     "Application.EurekaServerApplication.executor": "Debug",
     "Application.LoansApplication.executor": "Debug",
     "Application.SpringCloudApiGatewayApplication.executor": "Debug",
@@ -88,7 +73,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Java_Code/Bank_RabbitMQ_Docker_K8_Helm_Istio"
   }
 }]]></component>
   <component name="RunManager">
@@ -108,6 +94,28 @@
       <option name="presentableId" value="Default" />
       <updated>1748562542915</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added Request Tracke functionality.">
+      <option name="closed" value="true" />
+      <created>1749410039200</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749410039200</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added Request Trace functionality.">
+      <option name="closed" value="true" />
+      <created>1749410127279</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749410127279</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Request Tracke functionality." />
+    <MESSAGE value="Added Request Trace functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Request Trace functionality." />
   </component>
 </project>
